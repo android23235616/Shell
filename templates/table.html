@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <body >
+   <center>
+      <table border = 1>
+	  
+	  <tr>
+               <th> Roll Number </th>
+               <th> Subject </th>
+			   <th> Last Attendance </th>
+               <th> Total Attendance</th>
+			  
+			
+			   
+            </tr>
+         {% for roll in result %}
+         
+            <tr>
+               <td> {{ roll[0]}} </td>
+               <td> {{ roll[1] }} </td>
+			   <td> {{ roll[2]}} </td>
+               <td> {{ roll[3] }} </td>
+			  
+			
+			   
+            </tr>
+            
+         {% endfor %}
+      </table>
+      </center>
+   </body>
+</html>
